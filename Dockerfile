@@ -5,7 +5,7 @@ WORKDIR /srv/api
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY api/app app
+COPY app app
 COPY models /srv/models
 
 ENV MODEL_DIR=/srv/models
