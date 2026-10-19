@@ -27,7 +27,7 @@ jobs:
     env:
       # À adapter : le dépôt DagsHub où enregistrer les expériences
       DAGSHUB_REPO_OWNER: OmegaRak
-      DAGSHUB_REPO_NAME: projet-IA
+      DAGSHUB_REPO_NAME: late-delivery-predict
       # Secrets à créer dans GitHub : Settings > Secrets and variables > Actions
       MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
       MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
