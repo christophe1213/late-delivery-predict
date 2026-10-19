@@ -5,6 +5,7 @@ Authentification DagsHub (variables d'environnement) :
     MLFLOW_TRACKING_USERNAME   votre nom d'utilisateur DagsHub
     MLFLOW_TRACKING_PASSWORD   votre token DagsHub (Settings > Tokens)
 
+
 Optionnel :
     DAGSHUB_REPO_OWNER / DAGSHUB_REPO_NAME   (défaut : OmegaRak / projet-IA)
     MLFLOW_TRACKING_URI                      (remplace l'URI DagsHub, ex. sqlite:///mlflow.db pour un test local)
