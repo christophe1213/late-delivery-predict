@@ -8,7 +8,6 @@ Authentification DagsHub (variables d'environnement) :
 Optionnel :
     DAGSHUB_REPO_OWNER / DAGSHUB_REPO_NAME   (défaut : OmegaRak / projet-IA)
     MLFLOW_TRACKING_URI                      (remplace l'URI DagsHub, ex. sqlite:///mlflow.db pour un test local)
-
 Exemples :
     python src/train_mlflow.py
     python src/train_mlflow.py --run-name rf-profondeur-8 --max-depth 8
@@ -73,8 +72,8 @@ def parse_args():
 def configurer_tracking() -> str:
     uri = os.getenv("MLFLOW_TRACKING_URI")
     if not uri:
-        owner = os.getenv("DAGSHUB_REPO_OWNER", "OmegaRak")
-        repo = os.getenv("DAGSHUB_REPO_NAME", "projet-IA")
+        owner = os.getenv("DAGSHUB_REPO_OWNER", "christophe1213")
+        repo = os.getenv("DAGSHUB_REPO_NAME", "late-delivery-predict")
         uri = f"https://dagshub.com/{owner}/{repo}.mlflow"
     if "dagshub.com" in uri and not (
         os.getenv("MLFLOW_TRACKING_USERNAME") and os.getenv("MLFLOW_TRACKING_PASSWORD")
